@@ -1,11 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const TypingArea = () => {
   const [text, setText] = useState("");
   const [keyCount, setKeyCount] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
   
-
   const predefinedText = "Schreibe das, was hier steht ab";
   let accuracy = (correctCount / keyCount * 100).toFixed(1);
   
